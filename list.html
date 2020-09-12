@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSign</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="dark">
+      <div class="container">
+        <div class="left">
+          <img src="./images/logo.png" alt="Ecosign Logo" />
+          <nav>
+            <ul>
+              <li class="active"><a href="index.html#banner">მთავარი</a></li>
+              <li><a href="index.html#opportunities">უპირატესობები</a></li>
+              <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+              <li><a href="index.html#statistics">სტატისტიკა</a></li>
+              <li><a href="index.html#packages">პაკეტები</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right">
+          <img src="./images/user-pic.png" alt="" />
+          <h5>გამარჯობა, გაგი</h5>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard hidden">
+      <div class="panel">
+        <div class="cont">
+          <h3>ჩემი პანელი</h3>
+          <button class="main-button">დოკუმენტის გაგზავნა</button>
+        </div>
+
+        <button
+          class="nav-tab-button active"
+          id="inbox-button"
+          onclick="openPanel('inbox')"
+        >
+          <img src="images/inbox.svg" /><span class="text">შეტყობინებები</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="sent-button"
+          onclick="openPanel('sent')"
+        >
+          <img src="images/sent.svg" />
+          <span class="text">გაგზავნილი</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="saved-button"
+          onclick="openPanel('saved')"
+        >
+          <img src="images/saved.svg" />
+          <span class="text">შენახული</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="trash-button"
+          onclick="openPanel('trash')"
+        >
+          <img src="images/trash.svg" />
+          <span class="text">წაშლილი</span>
+        </button>
+      </div>
+
+      <div class="content-send">
+        <div class="member">
+          <div class="user-name">
+            <i class="fa fa-user"></i>
+            <div class="user-name-text">
+              <p>გაგი მურჯიკნელი</p>
+              <p class="qve">მოდერატორი</p>
+            </div>
+          </div>
+          <div class="email">gagi.murjikneli@gmail.com</div>
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        <div onclick="openModal()" class="add-member">
+          <i class="fa fa-plus"></i>წევრის დამატება
+        </div>
+        <a
+          style="
+            text-decoration: none;
+            align-self: flex-end;
+            margin: 10px 260px;
+          "
+          href="done.html"
+          ><button style="display: block" class="main-button">
+            გაგზავნა
+          </button></a
+        >
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./js/script.js"></script>
+    <div id="addMember" class="fixed">
+      <div class="content">
+        <img src="./images/avatar.png" alt="" />
+        <form action="">
+          <label for="user_name">სახელი</label>
+          <input type="text" name="user_name" placeholder="გაგი" /><label
+            for="user_lastname"
+            >გვარი</label
+          ><input type="text" name="user_lastname" placeholder="მურჯიკნელი" />
+          <label for="role">როლი</label>
+          <select name="role">
+            <option value="moderator">მოდერატორი</option>
+            <option value="sign">ხელმომწერი</option>
+          </select>
+          <input type="submit" value="დამატება" class="main-button" />
+        </form>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("addMember");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

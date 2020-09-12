@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSign</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="dark">
+      <div class="container">
+        <div class="left">
+          <img src="./images/logo.png" alt="Ecosign Logo" />
+          <nav>
+            <ul>
+              <li class="active"><a href="index.html#banner">მთავარი</a></li>
+              <li><a href="index.html#opportunities">უპირატესობები</a></li>
+              <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+              <li><a href="index.html#statistics">სტატისტიკა</a></li>
+              <li><a href="index.html#packages">პაკეტები</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right">
+          <img src="./images/user-pic.png" alt="" />
+          <h5>გამარჯობა, გაგი</h5>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <div class="panel">
+        <div class="cont">
+          <h3>ჩემი პანელი</h3>
+          <a href="upload.html"
+            ><button class="main-button">დოკუმენტის გაგზავნა</button></a
+          >
+        </div>
+
+        <button
+          class="nav-tab-button active"
+          id="inbox-button"
+          onclick="openPanel('inbox')"
+        >
+          <img src="images/inbox.svg" />შეტყობინებები
+        </button>
+        <button
+          class="nav-tab-button"
+          id="sent-button"
+          onclick="openPanel('sent')"
+        >
+          <img src="images/sent.svg" />
+          გაგზავნილი
+        </button>
+        <button
+          class="nav-tab-button"
+          id="saved-button"
+          onclick="openPanel('saved')"
+        >
+          <img src="images/saved.svg" />
+          შენახული
+        </button>
+        <button
+          class="nav-tab-button"
+          id="trash-button"
+          onclick="openPanel('trash')"
+        >
+          <img src="images/trash.svg" />
+          წაშლილი
+        </button>
+      </div>
+      <div class="content">
+        <div id="inbox" class="nav-tab">
+          <div class="chart" id="chart">INBOX</div>
+          <div class="mailing">
+            <div class="heading">
+              <h5>სათაური</h5>
+              <h5>სტატუსი</h5>
+              <h5>თარიღი</h5>
+              <h5>საქაღალდე</h5>
+            </div>
+            <div class="mails">
+              <div class="mail-item done">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sent" class="nav-tab" style="display: none">
+          <div class="chart" id="chart">SENT</div>
+          <div class="mailing">
+            <div class="heading">
+              <h5>სათაური</h5>
+              <h5>სტატუსი</h5>
+              <h5>თარიღი</h5>
+              <h5>საქაღალდე</h5>
+            </div>
+            <div class="mails">
+              <div class="mail-item done">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="saved" class="nav-tab" style="display: none">
+          <div class="chart" id="chart">SAVED</div>
+          <div class="mailing">
+            <div class="heading">
+              <h5>სათაური</h5>
+              <h5>სტატუსი</h5>
+              <h5>თარიღი</h5>
+              <h5>საქაღალდე</h5>
+            </div>
+            <div class="mails">
+              <div class="mail-item done">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="trash" class="nav-tab" style="display: none">
+          <div class="chart" id="chart">TRASH</div>
+          <div class="mailing">
+            <div class="heading">
+              <h5>სათაური</h5>
+              <h5>სტატუსი</h5>
+              <h5>თარიღი</h5>
+              <h5>საქაღალდე</h5>
+            </div>
+            <div class="mails">
+              <div class="mail-item done">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+              <div class="mail-item">
+                <h5>
+                  <p class="square"></p>
+                  EcoSign Document
+                </h5>
+                <div class="status">
+                  <div class="line"><div class="check"></div></div>
+                  <p>დარჩა 20 ადამიანი</p>
+                </div>
+                <div class="date">
+                  <p>01/20/2021</p>
+                  <p class="time">12:00AM</p>
+                </div>
+                <div class="last">
+                  <button class="main-button folder">IT</button>
+                  <button class="main-button edit">რედაქტირება</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

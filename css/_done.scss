@@ -1,0 +1,16 @@
+.content-done {
+  display: flex;
+  justify-content: center;
+  .text-w {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    color: #18b290;
+    img {
+      object-fit: contain;
+      width: 20vw;
+    }
+  }
+}

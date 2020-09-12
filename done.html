@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoSign</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="dark">
+      <div class="container">
+        <div class="left">
+          <img src="./images/logo.png" alt="Ecosign Logo" />
+          <nav>
+            <ul>
+              <li class="active"><a href="index.html#banner">მთავარი</a></li>
+              <li><a href="index.html#opportunities">უპირატესობები</a></li>
+              <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+              <li><a href="index.html#statistics">სტატისტიკა</a></li>
+              <li><a href="index.html#packages">პაკეტები</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right">
+          <img src="./images/user-pic.png" alt="" />
+          <h5>გამარჯობა, გაგი</h5>
+          <i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard hidden">
+      <div class="panel">
+        <div class="cont">
+          <h3>ჩემი პანელი</h3>
+          <button class="main-button">დოკუმენტის გაგზავნა</button>
+        </div>
+
+        <button
+          class="nav-tab-button active"
+          id="inbox-button"
+          onclick="openPanel('inbox')"
+        >
+          <img src="images/inbox.svg" /><span class="text">შეტყობინებები</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="sent-button"
+          onclick="openPanel('sent')"
+        >
+          <img src="images/sent.svg" />
+          <span class="text">გაგზავნილი</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="saved-button"
+          onclick="openPanel('saved')"
+        >
+          <img src="images/saved.svg" />
+          <span class="text">შენახული</span>
+        </button>
+        <button
+          class="nav-tab-button"
+          id="trash-button"
+          onclick="openPanel('trash')"
+        >
+          <img src="images/trash.svg" />
+          <span class="text">წაშლილი</span>
+        </button>
+      </div>
+
+      <div class="content-done">
+        <div class="text-w">
+          <img src="./images/done.png" alt="Done" />
+          <p>დოკუმენტი წარმატებით გაიგზავნა</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

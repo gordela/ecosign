@@ -1,0 +1,228 @@
+.banner {
+  display: grid;
+  grid-template-columns: 3.5fr 1.5fr;
+  position: relative;
+  .video-grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(83, 92, 122, 0.2),
+      rgba(6, 16, 49, 0.42)
+    );
+  }
+
+  .image-grad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(6, 16, 49, 0.42)
+    );
+  }
+  .leaf {
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 50%);
+    width: 7vw;
+    object-fit: contain;
+    z-index: 99;
+    left: 70px;
+  }
+  .half {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  i {
+    position: absolute;
+    right: 30%;
+    bottom: 60px;
+    z-index: 3;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(50%, 0);
+    padding: 25px;
+    color: #24b290;
+    transition: 100ms;
+    &:hover {
+      background: #24b290;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.opportunities {
+  position: relative;
+  .container {
+    display: grid;
+    grid-template-areas: "header header header" "time energy paper" "srulad srulad srulad";
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .back {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  h2 {
+    grid-area: header;
+    padding-top: 90px;
+    margin: 0;
+  }
+  .time {
+    grid-area: time;
+  }
+
+  .energy {
+    grid-area: energy;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .paper {
+    grid-area: paper;
+  }
+
+  .time,
+  .paper,
+  .energy {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+    img {
+      width: 40%;
+    }
+    p {
+      width: 60%;
+    }
+  }
+  .srulad {
+    grid-area: srulad;
+    margin-bottom: 100px;
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: rgba(36, 178, 144, 0.05);
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .leaf {
+    position: absolute;
+    width: 12vw;
+    top: 0;
+    right: 45px;
+    transform: translate(0, -50%);
+    z-index: 99;
+  }
+  .text {
+    h2 {
+      color: #24b290;
+    }
+    padding: 100px 150px;
+  }
+}
+
+.saved {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  .tree-saved,
+  .water-saved,
+  .time-saved,
+  .place-saved {
+    display: flex;
+    padding: 100px;
+    img {
+      width: 8vw;
+      object-fit: contain;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+      h3,
+      span {
+        color: #24b290;
+        font-size: 18px;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.packages {
+  position: relative;
+  .abs {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    z-index: -1;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 200px 0;
+    .package {
+      margin: 0 60px;
+      padding: 25px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0px 54px 69px 0px rgba(0, 0, 0, 0.04);
+      h3 {
+        font-size: 20px;
+        color: #24b290;
+      }
+      .price {
+        font-size: 70px;
+        color: #24b290;
+        span {
+          font-size: 20px;
+        }
+      }
+      .list {
+        width: 100%;
+        p {
+          display: grid;
+          grid-template-columns: 8fr 1fr;
+          border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+          padding: 20px 30px;
+          i {
+            font-size: 25px;
+            color: #24b290;
+          }
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

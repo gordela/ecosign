@@ -11,35 +11,41 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div class="left">
           <img src="./images/logo.png" alt="Ecosign Logo" />
           <nav>
             <ul>
-              <li><a href="#">მთავარი</a></li>
-              <li><a href="#">უპირატესობები</a></li>
-              <li><a href="#">ჩვენ შესახებ</a></li>
-              <li><a href="#">სტატისტიკა</a></li>
-              <li><a href="#">პაკეტები</a></li>
+              <li class="active"><a href="index.html#banner">მთავარი</a></li>
+              <li><a href="index.html#opportunities">უპირატესობები</a></li>
+              <li><a href="index.html#about">ჩვენ შესახებ</a></li>
+              <li><a href="index.html#statistics">სტატისტიკა</a></li>
+              <li><a href="index.html#packages">პაკეტები</a></li>
             </ul>
           </nav>
         </div>
 
         <div class="right">
-          <button class="main-button light">დემო ვერსია</button>
-          <button class="main-button">შესვლა</button>
+          <a href="dashboard.html"
+            ><button class="main-button light">დემო ვერსია</button></a
+          >
+          <a href="dashboard.html"
+            ><button class="main-button">შესვლა</button></a
+          >
         </div>
       </div>
     </header>
-    <section class="banner">
-      <video autoplay muted loop class="video">
+    <section id="banner" class="banner">
+      <div class="video-grad"></div>
+      <video id="video1" muted loop class="video">
         <source src="./images/video.mp4" type="video/mp4" />
       </video>
+      <i id="playButton" onclick="playPause()" class="fa fa-play"></i>
+      <div class="image-grad"></div>
       <img class="half" src="./images/banner-img.png" alt="Banner Image" />
     </section>
-    <section class="opportunities">
-      <img class="back" src="./images/opac.png" alt="Oppotunities background" />
+    <section id="opportunities" class="opportunities">
       <div class="container">
         <h2>ჩვენი შესაძლებლობები</h2>
         <div class="time">
@@ -61,7 +67,7 @@
         <button class="srulad main-button light">ნახე სრულად</button>
       </div>
     </section>
-    <section class="about">
+    <section style="padding-top: 130px" id="about" class="about">
       <img src="./images/about-img.png" alt="About Image" />
       <div class="text">
         <h2>ჩვენ შესახებ</h2>
@@ -74,7 +80,7 @@
         <button class="main-button light">ნახე სრულად</button>
       </div>
     </section>
-    <section class="container saved">
+    <section id="statistics" class="container saved">
       <div class="tree-saved">
         <img src="./images/tree-saved.png" alt="Tree Saved" />
         <div class="text">
@@ -104,7 +110,7 @@
         </div>
       </div>
     </section>
-    <section class="packages">
+    <section id="packages" class="packages">
       <div class="container">
         <div class="package">
           <h3>სტანდარტი</h3>
@@ -137,18 +143,17 @@
           <button class="main-button">ყიდვა</button>
         </div>
       </div>
-      <img class="abs" src="./images/packages-bg.png" alt="Bottom Background" />
     </section>
     <footer>
       <div class="container">
         <div class="info">
           <div class="mail">
             <h4>ელ. ფოსტა</h4>
-            <p>info@ecosign.ge</p>
+            <p><a href="mailto: info@ecosign.ge">info@ecosign.ge</a></p>
           </div>
           <div class="phone">
             <h4>ტელეფონი</h4>
-            <p>(+995) 577 48 88 96</p>
+            <p><a href="tel:+995577488896">(+995) 577 48 88 96</a></p>
           </div>
           <div class="address">
             <h4>მისამართი</h4>
@@ -171,5 +176,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
